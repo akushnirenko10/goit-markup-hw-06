@@ -935,6 +935,10 @@ img {
   border: 2px solid var(--accent-color);
 }
 
+.modal-old-checkbox:checked:focus + .modal-checkbox {
+  outline: 1px solid var(--secondary-bg-color);
+}
+
 .modal-agree-text {
   margin-left: 9px;
   color: var(--secondary-color);
