@@ -47,7 +47,7 @@
   margin-left: auto;
   margin-bottom: 24px;
 
-  fill: var(--navy-blue);
+  color: var(--navy-blue);
 
   border: 1px solid var(--navy-blue-modal);
   border-radius: 24px;
@@ -55,14 +55,18 @@
   cursor: pointer;
 
   transition:
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  fill: var(--white);
+  color: var(--white);
   background-color: var(--ocean);
+}
+
+.modal-close-btn-icon {
+  fill: currentColor;
 }
 
 .modal-title {
@@ -93,7 +97,7 @@
 .modal-input,
 .modal-textarea {
   font-family: var(--primary-font-family);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
 
@@ -132,31 +136,21 @@
   color: var(--navy-blue-modal);
 }
 
-.modal-input:focus + .modal-icon {
-  fill: var(--iris);
-}
-
 .modal-icon {
   position: absolute;
   top: 50%;
   left: 16px;
 
-  fill: var(--navy-blue);
+  fill: currentColor;
 
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-}
-.btn-send {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 169px;
 }
 
 .modal-checkbox {
@@ -181,18 +175,22 @@
   width: 16px;
   height: 16px;
 
-  fill: transparent;
+  color: transparent;
 
   border-radius: 2px;
   border: 1px solid var(--navy-blue-modal);
 
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .custom-checkbox {
   background-color: var(--ocean);
   border: 1px solid var(--ocean);
-  fill: var(--cloud);
+  color: var(--cloud);
+}
+
+.custom-checkbox-icon {
+  fill: currentColor;
 }

@@ -89,6 +89,11 @@ ol {
 }
 
 .modal-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 169px;
+
   padding: 16px 32px;
 
   font-weight: 500;

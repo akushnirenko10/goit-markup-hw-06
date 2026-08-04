@@ -107,3 +107,7 @@
   background-color: var(--green);
   cursor: pointer;
 }
+
+.footer-button-icon {
+  fill: currentColor;
+}
