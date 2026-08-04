@@ -92,7 +92,7 @@
 
 .modal-input,
 .modal-textarea {
-  font-family: var(--font-family);
+  font-family: var(--primary-font-family);
   letter-spacing: 0.04em;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
@@ -111,6 +111,10 @@
 .modal-textarea {
   padding: 8px 16px;
   height: 120px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  color: #434455;
   resize: none;
 }
 
@@ -120,7 +124,7 @@
 }
 
 .modal-textarea::placeholder {
-  font-family: var(--font-family);
+  font-family: var(--primary-font-family);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -146,7 +150,6 @@
 .modal-checkbox-wrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
   margin-bottom: 24px;
 }
 .btn-send {
@@ -166,4 +169,21 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--iris);
+}
+
+.custom-checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 2px;
+  border: 1px solid var(--navy-blue-modal);
+}
+
+.modal-checkbox:checked + .custom-checkbox {
+  background-color: var(--ocean);
+  background-image: url('../images/check-mark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid var(--ocean);
 }
