@@ -196,6 +196,10 @@
   color: var(--cloud);
 }
 
+.modal-checkbox:focus + .custom-checkbox {
+  outline: 1px solid var(--ocean);
+}
+
 .custom-checkbox-icon {
   fill: currentColor;
 }
