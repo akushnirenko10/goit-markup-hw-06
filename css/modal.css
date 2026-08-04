@@ -123,7 +123,7 @@
 
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04 em;
   color: #434455;
   resize: none;
 }
@@ -181,10 +181,10 @@
   width: 16px;
   height: 16px;
 
-  color: transparent;
-
   border-radius: 2px;
   border: 1px solid var(--navy-blue-modal);
+
+  cursor: pointer;
 
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -203,6 +203,11 @@
 
 .custom-checkbox-icon {
   fill: currentColor;
+  opacity: 0;
+}
+
+.modal-checkbox:checked + .custom-checkbox .custom-checkbox-icon {
+  opacity: 1;
 }
 
 /* .send-btn {
