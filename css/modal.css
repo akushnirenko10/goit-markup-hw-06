@@ -88,6 +88,11 @@
 .modal-wrapper {
   position: relative;
   margin-bottom: 8px;
+  color: #2e2f42;
+}
+
+.modal-wrapper:focus-within {
+  color: #4d5ae5;
 }
 
 .modal-wrapper-textarea {
@@ -194,3 +199,7 @@
 .custom-checkbox-icon {
   fill: currentColor;
 }
+
+/* .send-btn {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+} */
