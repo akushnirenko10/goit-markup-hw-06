@@ -38,6 +38,11 @@ body {
   background-color: var(--surface-primary);
 }
 
+body:has(.modal-overlay.is-open),
+body:has(.mobile-menu.is-open) {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -67,12 +72,33 @@ ol {
   list-style-type: none;
 }
 
+button {
+  color: inherit;
+  line-height: 0;
+  padding: 0;
+  border: 0;
+}
+
 .container {
-  max-width: 1158px;
+  max-width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .logo {
