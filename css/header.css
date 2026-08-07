@@ -30,8 +30,6 @@
   }
 }
 
-/* ----------- TABLET ------------- */
-
 @media screen and (max-width: 767px) {
   .nav,
   .address {
@@ -39,9 +37,16 @@
   }
 }
 
+/* ----------- TABLET ------------- */
+
 @media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid var(--accent-subtle);
+  }
+
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .burger-menu {
@@ -95,10 +100,6 @@
     font-style: normal;
   }
 
-  .address-item:not(:last-child) {
-    margin-bottom: 12px;
-  }
-
   .address-link {
     color: inherit;
 
@@ -106,8 +107,28 @@
   }
 }
 
-/* -------------- DESKTOP --------------- */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
 
+/* -------------- DESKTOP --------------- */
+@media screen and (min-width: 1158px) {
+  .address-list {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  .address-link {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+/* --------- */
 .nav-link:hover,
 .nav-link:focus,
 .address-link:hover,

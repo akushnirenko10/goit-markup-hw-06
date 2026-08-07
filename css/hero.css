@@ -1,11 +1,13 @@
 .hero {
-  padding: 188px 331px;
-  margin-right: auto;
+  max-width: 320px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   margin-left: auto;
-  max-width: 1440px;
+  margin-right: auto;
+
   background-image:
     linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,22 +15,79 @@
 }
 
 .hero-title {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
-  max-width: 496px;
+  width: 212px;
 
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  color: var(--surface-primary);
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
+  color: var(--white);
 }
 
 @media screen and (min-resolution: 192dpi) {
   .hero {
     background-image:
       linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
-      url(../images/hero-bg@2x.jpg);
+      url(../images/hero-bg-mobile@2x.jpg);
+  }
+}
+
+/* ----------- TABLET ---------- */
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding-top: 112;
+    padding-bottom: 112;
+
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-tablet.jpg);
+  }
+
+  .hero-title {
+    min-width: 496px;
+    margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-tablet@2x.jpg);
+  }
+}
+
+/* ++++++++++++ DESKTOP +++++++++ */
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-desktop.jpg);
+    padding: 188px 331px;
+    max-width: 1158px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+    max-width: 496px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-desktop@2x.jpg);
   }
 }
