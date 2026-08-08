@@ -9,7 +9,7 @@
 }
 
 .team-item {
-  flex-basis: 264px;
+  width: 264px;
   background-color: var(--surface-primary);
   border-radius: 0 0 4px 4px;
   box-shadow:
