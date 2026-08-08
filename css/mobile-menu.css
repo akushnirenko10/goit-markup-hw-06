@@ -55,6 +55,10 @@
   left: 16px;
 }
 
+.mobile-address {
+  font-style: normal;
+}
+
 .mobile-contacts {
   margin-bottom: 48px;
 }

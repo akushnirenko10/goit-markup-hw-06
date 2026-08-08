@@ -72,7 +72,7 @@
       linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
       url(../images/hero-bg-desktop.jpg);
     padding: 188px 331px;
-    max-width: 1158px;
+    max-width: 1440px;
   }
 
   .hero-title {

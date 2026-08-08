@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
+  <!-- HEADER -->
   <body>
-    <!-- HEADER -->
     <header id="header" class="header">
       <div class="container header-container">
         <a class="logo header-logo" href="./index.html"><span class="accent">Web</span>studio</a>
@@ -62,6 +62,7 @@
       </div>
     </header>
 
+    <!-- HERO -->
     <main>
       <section id="hero" class="hero">
         <div class="container">
@@ -70,9 +71,8 @@
           <button class="modal-btn" type="button">Order Service</button>
         </div>
       </section>
-    </main>
 
-    <!--
+      <!-- FEATURES -->
       <section id="features" class="features section">
         <div class="container">
           <h2 class="sr-only">Our features</h2>
@@ -84,7 +84,7 @@
                   <use href="./images/icons.svg#antena"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
+              <h3 class="subtitle features-subtitle">Strategy</h3>
               <p class="features-text">
                 Our goal is to identify the business problem to walk away with the perfect and
                 creative solution.
@@ -97,7 +97,7 @@
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
+              <h3 class="subtitle features-subtitle">Punctuality</h3>
               <p class="features-text">
                 Bring the key message to the brand's audience for the best price within the shortest
                 possible time.
@@ -110,7 +110,7 @@
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
+              <h3 class="subtitle features-subtitle">Diligence</h3>
               <p class="features-text">
                 Research and confirm brands with the strongest digital growth opportunities and
                 minimize risk.
@@ -123,7 +123,7 @@
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
+              <h3 class="subtitle features-subtitle">Technologies</h3>
               <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a deep passion for
                 problem-solving.
@@ -133,6 +133,7 @@
         </div>
       </section>
 
+      <!-- TEAM -->
       <section id="team" class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -405,12 +406,13 @@
         </div>
       </section>
 
+      <!-- PORTFOLIO -->
       <section id="portfolio" class="portfolio section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
 
           <ul class="portfolio-list">
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-overlay">
                 <img
                   class="portfoilio-img"
@@ -432,7 +434,7 @@
               </div>
             </li>
 
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-overlay">
                 <img
                   class="portfoilio-img"
@@ -454,7 +456,7 @@
               </div>
             </li>
 
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-overlay">
                 <img
                   class="portfoilio-img"
@@ -476,7 +478,7 @@
               </div>
             </li>
 
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-overlay">
                 <img
                   class="portfoilio-img"
@@ -498,7 +500,7 @@
               </div>
             </li>
 
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-overlay">
                 <img
                   class="portfoilio-img"
@@ -520,7 +522,7 @@
               </div>
             </li>
 
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-overlay">
                 <img
                   class="portfoilio-img"
@@ -546,6 +548,7 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer id="footer" class="footer">
       <div class="container footer-container">
         <div class="footer-wrapper">
@@ -612,27 +615,20 @@
 
         <div class="footer-wrapper">
           <p class="footer-text">Subscribe</p>
-          <form>
-            <div class="footer-container">
-              <input
-                type="email"
-                id="email"
-                class="footer-input"
-                name="email"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="footer-button">
-                Subscribe
-                <svg class="footer-button-icon" width="24" height="24">
-                  <use href="./images/icons.svg#send"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="footer-form-container">
+            <input type="email" id="email" class="footer-input" name="email" placeholder="E-mail" />
+            <button type="submit" class="footer-button">
+              Subscribe
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
 
+    <!-- MODAL -->
     <div id="modal" class="modal-overlay">
       <div class="modal">
         <button type="button" class="modal-close-btn">
@@ -696,8 +692,8 @@
       </div>
     </div>
 
-  
-    <div class="mobile-menu">
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu is-open">
       <div class="container mobile-container">
         <button class="modal-close-btn mobile-close-btn" type="button">
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -720,18 +716,18 @@
         </nav>
 
         <div class="mobile-wrapper">
-          <ul class="mobile-contacts">
-            <li class="mobile-contacts-item">
-              <a href="tel: +11 (000) 111-11-11" class="mobile-contacts-link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="mobile-contacts-item">
-              <a href="mailto: info@devstudio.com" class="mobile-contacts-link"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
+          <address class="mobile-address">
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts-item">
+                <a href="tel:+11(000)111-11-11" class="mobile-contacts-link">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mobile-contacts-item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
 
           <ul class="social mobile-social">
             <li class="social-item">
@@ -768,6 +764,6 @@
           </ul>
         </div>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>

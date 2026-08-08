@@ -38,8 +38,7 @@ body {
   background-color: var(--surface-primary);
 }
 
-body:has(.modal-overlay.is-open),
-body:has(.mobile-menu.is-open) {
+body:has(.modal-overlay.is-open) {
   overflow: hidden;
 }
 
@@ -85,7 +84,6 @@ button {
   margin-left: auto;
   padding-left: 16px;
   padding-right: 16px;
-  outline: 1px solid red;
 }
 
 .logo {
@@ -130,24 +128,25 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .section-title {
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.1;
   color: var(--contrast-high);
   text-align: center;
-}
-
-.subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--contrast-high);
-}
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .sr-only {
@@ -170,6 +169,10 @@ button {
     max-width: 768px;
   }
 
+  .subtitle {
+    text-align: left;
+  }
+
   .modal-btn:hover {
     background-color: var(--brand-pressed);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -183,5 +186,10 @@ button {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }

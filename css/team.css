@@ -1,14 +1,15 @@
 .team {
   background-color: var(--surface-default);
 }
-
 .team-list {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .team-item {
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: 264px;
   background-color: var(--surface-primary);
   border-radius: 0 0 4px 4px;
   box-shadow:
@@ -25,6 +26,10 @@
 .team-text,
 .team-subtitle {
   margin-bottom: 8px;
+}
+
+.team-subtitle {
+  text-align: center;
 }
 
 .social {
@@ -58,4 +63,19 @@
 
 .social-icon {
   fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-list {
+    gap: 24px;
+  }
 }

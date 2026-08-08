@@ -26,9 +26,9 @@
 }
 
 .modal {
-  padding: 24px;
-  max-width: 408px;
-  max-height: 80%;
+  padding: 24px 16px;
+  width: 90%;
+  height: 97vh;
   overflow-y: auto;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -59,7 +59,6 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
 .modal-close-btn:focus {
   color: var(--white);
   background-color: var(--ocean);
@@ -70,9 +69,11 @@
 }
 
 .modal-title {
+  margin-bottom: 16px;
+
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 16px;
 }
 
 .modal-subtitle {
@@ -213,3 +214,18 @@
 /* .send-btn {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 } */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 24px;
+    width: 408px;
+    height: 584px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal-close-btn:hover {
+    color: var(--white);
+    background-color: var(--ocean);
+  }
+}
