@@ -2,22 +2,17 @@
   margin-bottom: 8px;
 }
 
-
 @media screen and (max-width: 767px) {
   .features-item {
     margin-bottom: 72px;
   }
-
-  .features-text {
-    width: 264px;
-  }
 }
 
 @media screen and (max-width: 1157px) {
-    .features-subtitle{
+  .features-subtitle {
     font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
+    font-size: 36px;
+    line-height: 1.11;
   }
 
   .features-thumb {
@@ -36,9 +31,10 @@ line-height: 1.11;
     column-gap: 24px;
     row-gap: 72px;
   }
-  
+
   .features-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {

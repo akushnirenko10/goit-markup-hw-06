@@ -27,7 +27,7 @@
 
 .modal {
   padding: 24px 16px;
-  width: 90%;
+  width: 288px;
   height: 97vh;
   overflow-y: auto;
   box-shadow:
@@ -210,10 +210,6 @@
 .modal-checkbox:checked + .custom-checkbox .custom-checkbox-icon {
   opacity: 1;
 }
-
-/* .send-btn {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-} */
 
 @media screen and (min-width: 768px) {
   .modal {
