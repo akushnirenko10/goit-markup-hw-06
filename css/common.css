@@ -29,6 +29,10 @@
   --success: var(--green);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font-family);
   font-size: 16px;

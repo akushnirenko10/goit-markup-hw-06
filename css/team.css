@@ -56,7 +56,6 @@
   border-radius: 40px;
 }
 
-.team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--ocean);
 }
@@ -77,5 +76,9 @@
 @media screen and (min-width: 1158px) {
   .team-list {
     gap: 24px;
+  }
+
+  .team-social-link:hover {
+    background-color: var(--ocean);
   }
 }
